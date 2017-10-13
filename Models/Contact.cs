@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace AdressBook.Models
 {
@@ -64,6 +65,23 @@ namespace AdressBook.Models
     public int GetId()
     {
       return _id;
+    }
+
+    public static List<Contact> Search(List<Contact> contacts, string search)
+    {
+      Regex regex = new Regex($@"{search}", RegexOptions.IgnoreCase);
+      List<Contact> searchMatch = new List<Contact> {};
+      foreach(Contact contact in contacts)
+      {
+        Match matchName = regex.Match(contact.GetName());
+        Match matchAddress = regex.Match(contact.GetAddress());
+        Match matchPhone = regex.Match(contact.GetPhone());
+        if (matchName.Success || matchAddress.Success || matchPhone.Success)
+        {
+          searchMatch.Add(contact);
+        }
+      }
+      return searchMatch;
     }
   }
 }

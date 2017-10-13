@@ -30,9 +30,19 @@ namespace AdressBook.Controllers
         return View();
       }
       [HttpGet("/contact/{id}")]
-      public ActionResult ViewContact(int id)
+      public ActionResult ViewContactDetails(int id)
       {
         return View(Contact.Find(id));
+      }
+      [HttpGet("/contact/search")]
+      public ActionResult SearchContacts()
+      {
+        return View();
+      }
+      [HttpPost("/contact/results")]
+      public ActionResult SearchResults()
+      {
+        return View(Contact.Search(Contact.GetContacts(), Request.Form["search"]));
       }
     }
 }

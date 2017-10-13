@@ -1,0 +1,9 @@
+@using AdressBook.Models;
+
+<h1>Search Results:</h1>
+<ul>
+  @foreach(Contact contact in Model)
+  {
+    <li><a href='/contact/@contact.GetId()'>@contact.GetName()</a></li>
+  }
+</ul>
