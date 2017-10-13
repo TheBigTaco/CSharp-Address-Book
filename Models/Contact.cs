@@ -21,28 +21,16 @@ namespace AdressBook.Models
       _id = _contacts.Count;
     }
 
-    public void SetName(string name)
-    {
-      _name = name;
-    }
     public string GetName()
     {
       return _name;
     }
 
-    public void SetAddress(string address)
-    {
-      _address = address;
-    }
     public string GetAddress()
     {
       return _address;
     }
 
-    public void SetPhone(string phone)
-    {
-      _phone = phone;
-    }
     public string GetPhone()
     {
       return _phone;
