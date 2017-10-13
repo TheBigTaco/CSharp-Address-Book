@@ -1,6 +1,9 @@
 @using AdressBook.Models;
 
-<h1>Search Results:</h1>
+@{
+  Layout = "_Layout";
+}
+<h1 class="well">Search Results:</h1>
 <ul>
   @foreach(Contact contact in Model)
   {

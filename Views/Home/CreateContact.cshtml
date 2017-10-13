@@ -1,9 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+
 <form action="/contact/new" method="post">
-  <label for="contact-name">Enter Contacts Name:</label>
+  <label class="well" for="contact-name">Enter Contacts Name:</label>
   <input type="text" name="contact-name" id="contact-name">
-  <label for="contact-address">Enter Contacts Address:</label>
+  <label class="well" for="contact-address">Enter Contacts Address:</label>
   <input type="text" name="contact-address" id="contact-address">
-  <label for="contact-phone">Enter Contacts Phone Number:</label>
+  <label class="well" for="contact-phone">Enter Contacts Phone Number:</label>
   <input type="text" name="contact-phone" id="contact-phone">
-  <button type="submit" name="button">Add New Contact</button>
+  <button class="btn btn-xl btn-success" type="submit" name="button">Add New Contact</button>
 </form>
