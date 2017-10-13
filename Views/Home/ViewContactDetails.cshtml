@@ -2,12 +2,12 @@
   Layout = "_Layout";
 }
 
-<h1 class="well">Contact Details for @Model.GetName():</h1>
+<h1>Contact Details for @Model.GetName():</h1>
 <ul>
   <li>Address: @Model.GetAddress()</li>
   <li>Phone Number: @Model.GetPhone()</li>
 </ul>
 
 <form action="/contact/delete/@Model.GetId()" method="post">
-  <button type="submit" class="btn btn-xl btn-danger" name="button">Delete Contact</button>
+  <button type="submit" name="button">Delete Contact</button>
 </form>

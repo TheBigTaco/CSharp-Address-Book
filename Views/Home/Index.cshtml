@@ -2,11 +2,13 @@
   Layout = "_Layout";
 }
 
-<h1 class="jumbotron">Your Contacts:</h1>
+<h1>Your Contacts:</h1>
+<br>
 @{
   if (@Model.Count <= 0)
   {
     <p>No Contacts Added Yet</p>
+    <br>
   }
   else {
     <ul>
@@ -17,10 +19,13 @@
     </ul>
   }
 }
-<p><a href="/contact/form">Add a new Contact</a></p>
+<div id="footer">
+  <p><a href="/contact/form">Add a new Contact</a></p>
+  <br>
+  <p><a href="/contact/search">Search Contacts</a></p>
+  <br>
+</div>
 <br>
-<p><a href="/contact/search">Search Contacts</a></p>
-<br>
-<form action="/contact/clear" method="post">
+<form id="clear-button" action="/contact/clear" method="post">
   <button type="submit" name="button">Clear Contact List</button>
 </form>

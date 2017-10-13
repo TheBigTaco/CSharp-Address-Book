@@ -1,1 +1,45 @@
+body {
+  background-color: lightgrey;
+}
 
+.container {
+  padding-top: 10px;
+  background-color: grey;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: black;
+}
+
+#clear-button {
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+li {
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+ul {
+  background-color: darkgrey;
+}
+
+#footer {
+  background-color: darkgrey;
+}
+
+button {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-family: serif;
+}
