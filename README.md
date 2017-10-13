@@ -15,7 +15,7 @@ A website where you may store peoples names addresses and phone numbers server s
 * Open your web browser and navigate too `http://localhost:5000/`
 
 ### Contact Information
-You can reach me at adamtitus76@gmail.com or connect with me on linkedin at `www.linkedin.com/in/adam-titus-06740b149`
+You can reach me at adamtitus76@gmail.com or connect with me on linkedin at [www.linkedin.com/in/adam-titus-06740b149](www.linkedin.com/in/adam-titus-06740b149)
 ## Specs
 |behavior|input|output|
 |-|-|-|
