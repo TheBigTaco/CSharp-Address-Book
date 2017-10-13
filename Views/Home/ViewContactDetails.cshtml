@@ -7,3 +7,7 @@
   <li>Address: @Model.GetAddress()</li>
   <li>Phone Number: @Model.GetPhone()</li>
 </ul>
+
+<form action="/contact/delete/@Model.GetId()" method="post">
+  <button type="submit" class="btn btn-xl btn-danger" name="button">Delete Contact</button>
+</form>

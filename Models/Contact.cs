@@ -71,5 +71,10 @@ namespace AdressBook.Models
       }
       return searchMatch;
     }
+
+    public static void Delete(int id)
+    {
+      _contacts.RemoveAt(id-1);
+    }
   }
 }

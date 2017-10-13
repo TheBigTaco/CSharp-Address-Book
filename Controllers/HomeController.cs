@@ -44,5 +44,12 @@ namespace AdressBook.Controllers
       {
         return View(Contact.Search(Contact.GetContacts(), Request.Form["search"]));
       }
+
+      [HttpPost("/contact/delete/{id}")]
+      public ActionResult DeleteContact(int id)
+      {
+        Contact.Delete(id);
+        return View();
+      }
     }
 }
