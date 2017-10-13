@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
-using Rename.Models;
+using AdressBook.Models;
 
-namespace Rename.Controllers
+namespace AdressBook.Controllers
 {
     public class HomeController : Controller
     {

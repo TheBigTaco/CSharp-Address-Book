@@ -1,8 +1,8 @@
 using System;
 
-namespace Rename.Models;
+namespace AdressBook.Models;
 {
-  public class Variable
+  public class Contact
   {
 
   }
