@@ -8,6 +8,7 @@ namespace AdressBook.Models
     private string _name;
     private string _address;
     private string _phone;
+    private int _id;
     private static List<Contact> _contacts = new List<Contact>{};
 
     public Contact (string name, string address, string phone)
@@ -16,6 +17,7 @@ namespace AdressBook.Models
       _address = address;
       _phone = phone;
       _contacts.Add(this);
+      _id = _contacts.Count;
     }
 
     public void SetName(string name)
@@ -53,6 +55,15 @@ namespace AdressBook.Models
     public static void ClearContacts()
     {
       _contacts.Clear();
+    }
+
+    public static Contact Find(int id)
+    {
+      return _contacts[id-1];
+    }
+    public int GetId()
+    {
+      return _id;
     }
   }
 }

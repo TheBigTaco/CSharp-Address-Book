@@ -23,11 +23,16 @@ namespace AdressBook.Controllers
         Contact newContact = new Contact(Request.Form["contact-name"], Request.Form["contact-address"], Request.Form["contact-phone"]);
         return View(newContact);
       }
-      [HttpGet("/contact/clear")]
+      [HttpPost("/contact/clear")]
       public ActionResult ClearContacts()
       {
         Contact.ClearContacts();
         return View();
+      }
+      [HttpGet("/contact/{id}")]
+      public ActionResult ViewContact(int id)
+      {
+        return View(Contact.Find(id));
       }
     }
 }
